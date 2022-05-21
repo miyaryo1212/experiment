@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AR.js multi markers Test / prepublication</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:url" content="#" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="#" />
+    <meta property="og:description" content="#" />
+    <meta property="og:site_name" content="#" />
+    <meta property="og:image" content="#" />
+    <!--
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    -->
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0px; overflow:hidden;">
+    <a-scene embedded arjs="debugUIEnabled:false; patternRatio=0.90">
+        <a-marker type="pattern" url="./assets/pattern-4x4.marker_001.patt">
+            <a-box position="0 0.5 0" wireframe="true"></a-box>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
