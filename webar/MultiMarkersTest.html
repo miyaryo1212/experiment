@@ -22,11 +22,15 @@
     <a-scene embedded arjs="debugUIEnabled:false; patternRatio:0.75">
 
         <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.001.patt">
-            <a-box position="0 0.5 0" color="#0000ff" animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"></a-box>
+            <a-box position="0 0.5 0" color="#0000ff" 
+            animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
+            animation__="property: rotation; to: 0 360 0; dir: alternate; dur: 4000; easing: linear; loop: true;"></a-box>
         </a-marker>
 
         <a-marker type="pattern" url="./assets/marker/pattern-6x6.marker.002.patt">
-            <a-box position="0 0.5 0" color="#ff0000" animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"></a-box>
+            <a-box position="0 0.5 0" color="#ff0000" 
+            animation="property: object3D.position.y; to: 1.0; dir: alternate; dur: 2000; loop: true"
+            animation__="property: rotation; to: 0 360 0; dir: alternate; dur: 4000; easing: linear; loop: true;"></a-box>
         </a-marker>
 
         <a-entity camera></a-entity>
