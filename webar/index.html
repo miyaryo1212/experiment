@@ -2,28 +2,55 @@
 <html>
 
 <head>
-    <title>webar / experiment</title>
+    <title>WebARを体験しよう！ - A-Frame + AR.js / 物理化学班 </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:url" content="#" />
+    <meta property="og:url" content="https://miyaryo1212.github.io/webar/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="#" />
-    <meta property="og:description" content="#" />
-    <meta property="og:site_name" content="#" />
+    <meta property="og:title" content="WebARを体験しよう！" />
+    <meta property="og:description" content="A-FrameとAR.jsを用いてブラウザ上でARを体験！" />
+    <meta property="og:site_name" content="butsukaga" />
     <meta property="og:image" content="#" />
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 
 <body>
-    <header><h1>webar / prepublication</h1></header>
+    <header>
+        <h1>WebAR体験</h1>
+    </header>
     <main>
-        <h2>開発中のプロジェクト一覧</h2>
         <article>
-            <ul>
-                <li><a href="./MultiMarkersTest.html">AR.jsで複数マーカーを設置する</a></li>
-            </ul>
+            <h2>分子構造の3Dモデル</h2>
+                <ul>
+                    <li>007 クロロメタン</li>
+                    <li>014 エタノール</li>
+                    <li>018 酢酸</li>
+                    <li>025 塩化ビニル</li>
+                    <li>070 ジエチルエーテル</li>
+                    <li>144 ベンゼン</li>
+                    <li>156 トルエン</li>
+                    <li>180 サリチル酸メチル</li>
+                    <li>197 ナフタレン</li>
+                    <li>232 ポリスチレン</li>
+                    <li>248 セルロース</li>
+                </ul>
+                <p>今回ARを製作するにあたって、<a href="https://rika-net.com/contents/cp0010/start.html" target="_blank">理科ねっとわーく</a>のものを使用しました。
         </article>
     </main>
+    <footer>
+        <small>&#xA9; 2022 miyaryo1212</small><br>
+    </footer>
 </body>
+
+<script>
+    const devices = (await navigator.mediaDevices.enumerateDevices())
+    .filter((device) => device.kind === 'videoinput')
+    .map((device) => {
+      return {
+        text: device.label,
+        value: device.deviceId,
+      };
+    });
+</script>
 
 </html>
