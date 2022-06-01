@@ -1,12 +1,22 @@
-var boxEl = document.querySelector('a-box');
-// カーソルがぶつかったら拡大
-boxEl.addEventListener('mouseenter', function () {
-  boxEl.setAttribute('width', 10);
-  console.log("mouseenter");
-});
 
-// カーソルが離れたら元にもどす
-boxEl.addEventListener('mouseleave', function () {
-  boxEl.setAttribute('width', 3);
-  console.log("mouseleave");
-});
+  var home = document.querySelector('#home');
+  var about = document.querySelector('#about');
+  var service = document.querySelector('#service');
+  var contact = document.querySelector('#contact');
+
+
+  home.addEventListener('click', function () {
+    location.href = "/web-site-vr/web-site/";
+  });
+
+  about.addEventListener('click', function () {
+    location.href = "/web-site-vr/web-site/about.html";
+  });
+
+  service.addEventListener('click', function () {
+    location.href = "/web-site-vr/web-site/service.html";
+  });
+
+  contact.addEventListener('click', function () {
+    location.href = "/web-site-vr/web-site/contact.html";
+  });
